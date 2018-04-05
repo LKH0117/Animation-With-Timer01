@@ -22,9 +22,10 @@ class ViewController: UIViewController {
         mylbl.text = String(count)
     }
     @IBAction func btS(_ sender: Any) {
-        //타이머 0.1초마다 계속됨
+        //버튼 하나로 스타트/스탑이된다
         if checkP == false{
             checkP = true
+            //타이머 1초마다 계속됨
              myTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(Animation), userInfo: nil, repeats: true)
         }else {
             checkP = false

@@ -23,13 +23,13 @@ class ViewController: UIViewController {
     }
     @IBAction func btS(_ sender: Any) {
         //타이머 0.1초마다 계속됨
- //       if checkP == false{
- //           checkP = true
+        if checkP == false{
+            checkP = true
              myTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(Animation), userInfo: nil, repeats: true)
- //       }else {
- //           checkP = false
- //           myTimer.invalidate()
- //       }
+        }else {
+            checkP = false
+            myTimer.invalidate()
+        }
     }
     
     @IBAction func btT(_ sender: Any) {
